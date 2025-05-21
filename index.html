@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Boda - Confirmación de Asistencia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="invitation-container">
+        <header>
+            <h1>¡Estás invitado a nuestra boda! 💍✨</h1>
+        </header>
+        
+        <section class="details">
+            <p>Nos encantaría compartir este día tan especial contigo.</p>
+            <p>Por favor, confirma tu asistencia completando el formulario.</p>
+        </section>
+
+        <form id="confirmationForm">
+            <label for="name">Nombre completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="guests">Número de acompañantes:</label>
+            <select id="guests" name="guests">
+                <option value="0">Solo yo</option>
+                <option value="1">1 acompañante</option>
+                <option value="2">2 acompañantes</option>
+                <option value="3">3 acompañantes</option>
+                <option value="4">4 acompañantes</option>
+                <option value="5">5 acompañantes</option>
+                <option value="6">6 acompañantes</option>
+            </select>
+
+            <label for="attendance">¿Asistirás?</label>
+            <select id="attendance" name="attendance">
+                <option value="yes">Sí, asistiré</option>
+                <option value="no">No podré asistir</option>
+            </select>
+
+            <label for="type">Tipo de asistencia:</label>
+            <select id="type" name="type">
+                <option value="presencial">Presencial</option>
+                <option value="virtual">Virtual (Zoom)</option>
+            </select>
+
+            <label for="message">Mensaje para los novios (opcional):</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Confirmar asistencia</button>
+        </form>
+
+        <p id="statusMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
